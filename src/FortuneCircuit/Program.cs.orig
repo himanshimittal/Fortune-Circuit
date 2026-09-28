@@ -1,0 +1,10 @@
+using FortuneCircuit.Application;
+using FortuneCircuit.Domain;
+using FortuneCircuit.Infrastructure;
+using FortuneCircuit.Infrastructure.Dice;
+using FortuneCircuit.Infrastructure.Logging;
+using FortuneCircuit.Presentation;
+
+namespace FortuneCircuit;
+
+internal static class Program { }

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FortuneCircuit</RootNamespace>
+    <AssemblyName>FortuneCircuit</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Expose internal test seams (custom Board layouts) to the test assembly only. -->
+    <InternalsVisibleTo Include="FortuneCircuit.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Include existing source files from the old folder to avoid moving files. Exclude generated obj/bin files. -->
+    <Compile Include="..\BusinessHouseGame\**\*.cs" Exclude="..\BusinessHouseGame\**\obj\**;..\BusinessHouseGame\**\bin\**" />
+  </ItemGroup>
+</Project>

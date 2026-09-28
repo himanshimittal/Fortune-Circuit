@@ -10,8 +10,5 @@
     <InternalsVisibleTo Include="FortuneCircuit.Tests" />
   </ItemGroup>
 
-  <ItemGroup>
-    <!-- Include existing source files from the old folder to avoid moving files. Exclude generated obj/bin files. -->
-    <Compile Include="..\BusinessHouseGame\**\*.cs" Exclude="..\BusinessHouseGame\**\obj\**;..\BusinessHouseGame\**\bin\**" />
-  </ItemGroup>
+  <!-- Rely on SDK defaults to include source files in this project folder. -->
 </Project>

@@ -17,8 +17,5 @@
     <ProjectReference Include="..\\..\\src\\FortuneCircuit\\FortuneCircuit.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <!-- Include existing test source files from old tests folder. Exclude generated obj/bin files. -->
-    <Compile Include="..\BusinessHouseGame.Tests\**\*.cs" Exclude="..\BusinessHouseGame.Tests\**\obj\**;..\BusinessHouseGame.Tests\**\bin\**" />
-  </ItemGroup>
+  <!-- Rely on SDK defaults to include test files in this project folder. -->
 </Project>
